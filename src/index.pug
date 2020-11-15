@@ -1,0 +1,12 @@
+extends _templates/_layout/_layout.pug
+
+block var
+	- let title = 'Page | Index';
+	- let bodyClass = 'index-page';
+
+//- block loading
+//- 	include _templates/_layout/_loading
+block banner,breadcrumb
+block main
+	include _templates/index/i-1
+block scripts

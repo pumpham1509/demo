@@ -1,0 +1,33 @@
+block var
+
+doctype html
+
+html(lang="en")
+	head
+		title #{title}
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0, user-scalable=no")
+		meta(http-equiv="X-UA-Compatible", content="ie=edge")
+		link(rel='shortcut icon', type='image/png', href='/favicon/favicon.ico')
+		link(rel="stylesheet", href="./css/core.min.css")
+		link(rel="stylesheet", href="./css/main.min.css")
+	body
+		block loading
+		//- main content
+		block header
+			include _header.pug
+		block banner,breadcrumb
+		main
+			block main
+			#js-page-verify(class=bodyClass hidden)
+		block footer
+			include _footer.pug
+		//- end main content
+		//- #go-top
+		//- 	img.svg(src="./assets/icons/gotop.svg")
+		//- include scripts
+		//- script(type="text/javascript", src='https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v3.3')
+		script(type="text/javascript", src="https://maps.googleapis.com/maps/api/js?&libraries=places&key=AIzaSyAq6ag0zUMblc-Wk5Z5S8KWkHpT3ak1LzI")
+		script(type="text/javascript", src="./js/core.min.js")
+		script(type="text/javascript", src="./js/main.min.js")
+		block scripts

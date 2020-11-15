@@ -1,0 +1,9 @@
+{
+	"fonts": ["src/fonts/**"],
+	"js": [
+		"node_modules/jquery/dist/jquery.min.js",
+		"node_modules/lazysizes/lazysizes.min.js",
+		"node_modules/swiper/js/swiper.js"
+	],
+	"css": ["node_modules/swiper/css/swiper.min.css"]
+}
